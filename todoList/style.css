@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Nunito', "consolas","sans-serif";
+    font-weight: 700;
+    background-image: linear-gradient(to right, rgb(231, 202, 231), rgb(236, 225, 236))
+}
+
+.heading{
+    font-size: 20pt;
+    font-weight: 800;
+    text-align: right;
+}
+
+.fa-check-double{
+    color: #ae00ff;
+}
+
+
+
+
+.adding-box{
+    border-radius: 4px;
+    padding: 1%;
+    margin-bottom: 2%;
+    background-color: #e0a0e0;
+}
+
+#input-container{
+    padding: 0%;
+    min-width: 85%;
+    height:35px;
+    display: inline-block;
+}
+
+#add-task-button{
+    height: 35px;
+    width: 60px;
+    border-radius: 12px;
+    color: white;
+    background-color: #ae4bc7;
+    font-family: 'Nunito';
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#add-task-button:hover{
+    color: #d400ff;
+    background-color: rgb(194, 154, 199);
+}
+
+#add-task-button:active{
+    color: white;
+    background-color: rgb(90, 30, 255);
+}
+
+#field-input{ 
+    width: 100%;
+    height:100%;
+    padding-left: 13px;
+    background-color: #e7dee7;
+    border-radius: 5px;
+    font-family: 'Nunito';
+    font-size: large;
+    font-weight: 700;
+}
+
+
+
+
+.container{
+    min-width: 250px;
+    max-width: 600px;
+    min-height: 350px;
+    background-color: #e2b0e2;
+    border-radius: 6px;
+    margin-left: auto; margin-right: auto; margin-top: 3%;
+    padding: 1%;
+    box-shadow: 4px 4px 4px grey;
+}
+
+#content{
+    border: 2px inset rgb(224, 118, 228);
+    padding: 1%;
+    min-height: 250px;
+}
+
+ul{
+    margin-top: 2px;
+}
+
+ul li{
+    /* border: 2px dashed; */
+    font-size: 14pt;
+    list-style: none;
+    padding: 2px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width:28px;
+    background-image: url(imgs/unchecked.png);
+    background-size: cover;
+    top: -1px;
+    left: -37px;
+    
+}
+
+ul li.checked{
+    color:grey;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(imgs/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+ul li span:hover{
+    background-color: rgba(240, 84, 84, 0.712);
+}

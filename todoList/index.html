@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/34f5552e3a.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="imgs/todo.svg">
+    <title> Your To-Do List.</title>
+</head>
+<body>
+
+    <h1><marquee style="font-family: consolas;"> project completed. #1</marquee></h1>
+    
+
+    <div class="container">
+        <div class="heading">To-Do List <i class="fa-solid fa-check-double"></i></div>
+        <div class="adding-box">
+            <div id="input-container"><input id="field-input" placeholder="Add task here."></input></div>
+            <button id="add-task-button" onclick="addTask()">ADD</button>
+        </div>
+        <div id="content">
+            <ul id="list-container">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
